@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import '../styles/ProjectDisplay.css';
-import { LanguageList } from "../helpers/LanguageList";
 
 function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
-  const languages = LanguageList[id]; 
-  /* I added this Lanaguage List */
+
+  const iconStyle = {
+    textDecoration: 'none', // Remove the underline
+  };
   
   return (
     <div className="project">
@@ -18,8 +19,7 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skill}
       </p>
-      <GitHubIcon />
-
+      <a href={project.link} target="_blank" rel="noopener noreferrer" style={iconStyle}><GitHubIcon /></a>
     </div>
   );
 }
