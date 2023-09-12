@@ -6,6 +6,7 @@ import Experience from './pages/Experience';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectDisplay from './pages/ProjectDisplay';
+import Langauges from './pages/Langauges';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           
           <Route path ="/" element={<Home/>}/>
+          <Route path ="/languages" element={<Langauges />}/>
           <Route path ="/projects" element={<Projects/>}/>
           <Route path ="/project/:id" element={<ProjectDisplay/>} />
           <Route path ="/experience" element={<Experience/>}/>

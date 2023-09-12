@@ -4,6 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
 import "../styles/Home.css"
 export default function Home() {
+
   return (
     <div className="home">
       <div className="about">
