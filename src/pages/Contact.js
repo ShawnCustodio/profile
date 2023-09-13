@@ -15,14 +15,20 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
-    console.log('Form Values:', formValues);
-  
+    
+    const messageWithSenderInfo = 'Name: ${formValues.name} Email: ${formValues.email} Message: ${formvValues.message}    ';
+
+    
     emailjs
       .send(
         'service_r6z3xzu',
         'template_1tismpe',
-        formValues,
+        {
+            message: formValues.message,
+            from_name: formValues.name,
+            to_name: "Shawn Custodio",
+        },
+        
         'iql6ouizkK6f1X1Ls'
       )
       .then(
