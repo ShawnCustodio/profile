@@ -2,13 +2,13 @@ import React from 'react'
 import Mentoritem from '../components/Mentoritem';
 import { MentorshipList } from '../helpers/MentorshipList';
 
-import '../styles/Projects.css';
+import '../styles/Mentorship.css';
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="mentor">
       <h1> My Mentee's </h1>
-      <div className="projectList">
+      <div className="mentorList">
        {MentorshipList.map((mentee, idx) => {
        return <Mentoritem id={idx} name={mentee.name} image={mentee.image}/>
        })}
