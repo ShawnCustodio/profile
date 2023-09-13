@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { MentorshipList } from '../helpers/MentorshipList'
 import GitHubIcon from "@material-ui/icons/GitHub";
-import '../styles/ProjectDisplay.css';
+import '../styles/MentorshipDisplay.css';
 
 function ProjectDisplay() {
   const { id } = useParams();
