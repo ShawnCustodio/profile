@@ -2,9 +2,9 @@ import React from 'react'
 import Mentoritem from '../components/Mentoritem';
 import { MentorshipList } from '../helpers/MentorshipList';
 
-import '../styles/Mentorship.css';
+import '../styles/Projects.css';
 
-export default function Projects() {
+export default function Mentorship() {
   return (
     <div className="mentor">
       <h1> My Mentee's </h1>
