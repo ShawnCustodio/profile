@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import {Link, Navigate, useLocation, useNavigate} from 'react-router-dom';
 import "../styles/NavBar.css";
 import ReorderIcon from '@material-ui/icons/Reorder';
 export default function NavBar () {
@@ -20,10 +20,16 @@ export default function NavBar () {
         </div>
         <div className="links">
             <Link to="/"> Home </Link>
+            {location.pathname === '/' ? (
+                <a href="#aboutMe"> About </a>
+            ) : (
+                <Link to="/"> About </Link>
+             )}      
             <Link to="/projects"> Projects </Link>
             <Link to="/experience"> Experience</Link>
             <Link to="/mentorship"> Mentorship</Link>
-        </div>
+            
+          </div>
     </div>
   )
 }
