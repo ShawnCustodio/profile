@@ -14,7 +14,8 @@
     font-size: 35px;
   }
   .project img {
-    width: 400px;
+    height: auto;
+    width: 350px;
     border-radius: 10px;
   }
   
@@ -58,28 +59,8 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  --color: rgba(30, 30, 30);
-  --bgColor: rgba(245, 245, 245);
-  min-height: 100vh;
 
-  display: grid;
-  align-content: center;
-  gap: 2rem;
-  padding: 2rem;
-
-  font-family: "Jura", sans-serif;
-  color: var(--color);
-  background: var(--bgColor);
-}
 
 h1 {
   text-align: center;

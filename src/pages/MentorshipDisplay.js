@@ -4,13 +4,13 @@ import { MentorshipList } from '../helpers/MentorshipList'
 import GitHubIcon from "@material-ui/icons/GitHub";
 import '../styles/MentorshipDisplay.css';
 
-function ProjectDisplay() {
+function MentorshipDisplay() {
   const { id } = useParams();
   const mentee = MentorshipList[id];
 
   
   return (
-    <div className="project">
+    <div className="mentor">
       <h1> {mentee.name}</h1>
       <img src={mentee.image} />
       <p>
@@ -22,4 +22,4 @@ function ProjectDisplay() {
   );
 }
 
-export default ProjectDisplay;
+export default MentorshipDisplay;

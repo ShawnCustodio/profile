@@ -6,7 +6,7 @@ import '../styles/Projects.css';
 
 export default function Mentorship() {
   return (
-    <div className="mentor">
+    <div className="projects">
       <h1> My Mentee's </h1>
       <div className="mentorList">
        {MentorshipList.map((mentee, idx) => {
