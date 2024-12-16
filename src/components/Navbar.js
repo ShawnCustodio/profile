@@ -20,14 +20,11 @@ export default function NavBar () {
         </div>
         <div className="links">
             <Link to="/"> Home </Link>
-            {location.pathname === '/' ? (
-                <a href="#aboutMe"> About </a>
-            ) : (
-                <Link to="/"> About </Link>
-             )}      
             <Link to="/projects"> Projects </Link>
             <Link to="/experience"> Experience</Link>
+            <Link to="/education"> Education </Link>
             <Link to="/mentorship"> Mentorship</Link>
+            <Link to ="/"> Research</Link>
             
           </div>
     </div>

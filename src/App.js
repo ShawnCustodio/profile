@@ -9,6 +9,7 @@ import ProjectDisplay from './pages/ProjectDisplay';
 import Contact from './pages/Contact';
 import Mentorship from './pages/Mentorship';
 import MentorshipDisplay from './pages/MentorshipDisplay';
+import Education from './pages/Education';
 import { useEffect } from 'react';
 
 
@@ -39,6 +40,7 @@ function App() {
           <Route path ="/contact" element={ <Contact />} />
           <Route path ="/mentorship" element={ <Mentorship />} />
           <Route path ="/mentorship/:id" element={ <MentorshipDisplay />}/>
+          <Route path ="/education" element={ <Education />} />
         </Routes>
         <Footer />
       </Router>

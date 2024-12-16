@@ -1,0 +1,40 @@
+.experience {
+    padding: 50px 20px; /* Add padding to avoid elements being too close to the edges */
+    background-color: white; /* Optional: set a background color */
+    min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+    margin-top: 10px;
+    padding-top: 100px;
+}
+  
+  .vertical-timeline-element-title {
+    font-size: 24px; /* Adjust title size if necessary */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .vertical-timeline-element--education {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow to timeline elements */
+  }
+  
+  .vertical-timeline-element--education p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .vertical-timeline-element--education .vertical-timeline-element-title {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .vertical-timeline-element-title {
+      font-size: 18px;
+    }
+  
+    .vertical-timeline-element--education p {
+      font-size: 14px;
+    }
+  }
+  

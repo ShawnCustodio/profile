@@ -43,7 +43,6 @@ export default function Home() {
       <img src={Me} height="300px" style={{marginTop: '40px'}}/>
       <ul class="tilesWrap">
 	<li>
-		<h2>LA</h2>
 		<h3>Languages</h3>
 		<p>
 			React, Java, JavaScript, HTML, CSS, SQL, Python
@@ -54,35 +53,38 @@ export default function Home() {
 		<Link to="/projects"><button>Projects</button></Link>
 	</li>
 	<li>
-		<h2>ED</h2>
 		<h3>Education</h3>
 		<p>
-			Undergraduate student at the University of Texas at Dallas!
+      Bachelor's Degree: University of Texas at Dallas
       <br />
+      Associate's Degree: Collin County Community College
+      <br/>
       <br />
-      You can see my Education timeline here!
+      You can see my Education and Certifications here!
 		</p>
 		<Link to="/experience"><button>Education</button> </Link>
 	</li>
 	<li>
-		<h2>SL</h2>
-		<h3>Services and Libraries</h3>
+		<h3>Experiences</h3>
 		<p>
-			
-      BootStrap, MaterialUI, Yarn, JavaFX, MySQL, MongoDB, AWS EC2
-      <br />
-      <br />
-
+      Within this page you can see my Professional Experiences!
 		</p>
+		<Link to="/experience"><button>Experience</button> </Link>
 	</li>
 	<li>
-		<h2>SM</h2>
 		<h3>Social Media</h3>
 		<p>
 			Please Click on the icons to view my socials!
 		</p>
     <button onClick={scrollToSocial}> Click Me!</button>
 	</li>
+    <li>
+      <h3>Research </h3>
+      <p>
+        Click on the icon bellow to view my Research Statement, Papers and Experiences!
+      </p>
+      <Link to="/"><button>Research</button></Link>
+  </li>
 </ul>
       </div>
 
